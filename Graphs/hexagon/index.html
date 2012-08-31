@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="hexagon.js"></script>
+  </head>
+<script type="text/javascript">
+  $(function(){
+  
+    $('#div').hexagon({
+      width: 400,
+      height: 400,
+      edges: 
+      [
+        {id: '1', text: 'Profitability'},
+        {id: '2', text: 'Cash Flow'},
+        {id: '3', text: 'Growth'},
+        {id: '4', text: 'Productivity'},
+        {id: '5', text: 'Safety'},
+        {id: '6', text: 'Efficiency'}        
+      ],
+      entries:
+      [
+        {
+          id: '7',
+          text: '2010',
+          values: [ { id: '1', value: 100 }, { id: '2', value: 100 }, { id: '3', value: 100 }, { id: '4', value: 90 }, { id: '5', value: 95 },{ id: '6', value: 70 } ]
+        },
+        {
+          id: '8',
+          text: '2011',
+          values: [ { id: '1', value: 80 }, { id: '2', value: 60 }, { id: '3', value: 90 }, { id: '4', value: 85 }, { id: '5', value: 89 }, { id: '6', value: 100 } ]
+        }
+      ]
+    });
+  
+  });
+</script>  
+
+<div id='div'>
+</div>
+  
+</html>
