@@ -46,6 +46,5 @@ jQuery.fn.popupDiv = function (divToPop)
 					 	'z-index':500,
 				});
 			 $(divToPop).show();
-			 $(divToPop).attr("input-id", input.attr("id"))
 	});
 };

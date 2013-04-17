@@ -21,6 +21,7 @@
 		var invalid = false;	
 		if(rules.email == true)
 		{
+			// Email validation
 			$this.find('input[valid="email"]').each(function()
 			{
 				var value = $(this).val();
@@ -39,6 +40,7 @@
 		}
 		if(rules.numeric == true)
 		{
+			// Numeric validation
 			$this.find('input[valid="numeric"]').each(function()
 			{
 				var value = $(this).val();
@@ -58,6 +60,7 @@
 		}  
 		if(rules.date == true)
 		{
+			// Date validation
 			$this.find('input[valid="date"]').each(function()
 			{
 				var value = $(this).val();
